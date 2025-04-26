@@ -205,6 +205,8 @@ GPU中每个SM都能支持数百个线程并发执行，每个GPU通常有多个
 
 CUDA 采用单指令多线程SIMT架构管理执行线程，不同设备有不同的线程束大小，但是到目前为止基本所有设备都是**维持在32**，也就是说每个SM上有多个block，一个block有多个线程（可以是几百个，但不会超过某个最大值），但是从机器的角度，在某时刻T，SM上只执行一个线程束，也就是32个线程在同时同步执行，线程束中的每个线程执行同一条指令
 
+[详情链接](expand_concept/线程束.md)
+
 #### SIMD vs SIMT
 
 | 特性                | SIMD（Single Instruction, Multiple Data） | SIMT（Single Instruction, Multiple Threads） |
@@ -214,6 +216,8 @@ CUDA 采用单指令多线程SIMT架构管理执行线程，不同设备有不�
 | 并行粒度        | 数据级并行（操作向量寄存器）               | 线程级并行（以 Warp 为单位调度）             |
 | 分支处理        | 所有数据必须执行相同操作（严格同步）         | 允许线程分化（Warp Divergence，但性能下降）  |
 | 灵活性          | 低（需显式向量化代码）                     | 高（线程可独立执行不同逻辑）                 |
+
+[详情链接](expand_concept/SIMD_AND_SIMT.md)
 
 ### Fermi 架构 vs Kepler 架构
 
