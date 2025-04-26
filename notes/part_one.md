@@ -218,5 +218,5 @@ CUDA 采用单指令多线程SIMT架构管理执行线程，不同设备有不�
 ### Fermi 架构 vs Kepler 架构
 
 详情链接：
-[链接](expand_concept/Fermi 架构 vs Kepler 架构.md)
+[链接](expand_concept/Fermi架构vsKepler架构.md)
 

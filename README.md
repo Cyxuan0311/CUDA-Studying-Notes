@@ -9,4 +9,5 @@
 
 |章节     |     相应链接    |
 |---------|-----------------|
-|part_one|
+|part_one| [链接](notes/part_one.md) |
+| part_two | 
